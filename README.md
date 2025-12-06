@@ -1,16 +1,154 @@
-# React + Vite
+Warehouse Robot Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, aesthetic, real-time monitoring dashboard for warehouse robots — built using React, Vite, Zustand, TailwindCSS, and Recharts.
+It simulates robot movement, task allocation, analytics, and visualizes robots on an interactive SVG-based warehouse map.
 
-Currently, two official plugins are available:
+🔗 Live Demo:
+👉 https://warehouse-robot-dashboard-m7b5wcetz.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
+🧭 Authentication
 
-## React Compiler
+Login & Signup (mock)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Zustand-based user state persistence
 
-## Expanding the ESLint configuration
+📊 Dashboard Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Total bots, idle bots, bots in error
+
+Pending tasks
+
+Aesthetic stat cards using glassmorphism UI
+
+🤖 Bot Status Monitoring
+
+Live bot updates
+
+Battery levels, speed, current task
+
+Pastel aesthetic bot cards
+
+📝 Task Allocation & Queue
+
+Create new tasks (pickup, drop, priority, notes)
+
+Automatic queue processing
+
+Aesthetic task cards with live timestamps
+
+📈 Analytics & Charts
+
+Bot status distribution (Pie)
+
+Battery distribution (Bar)
+
+Fully responsive Recharts visualizations
+
+🗺️ Warehouse Map (SVG Powered)
+
+Upload any SVG warehouse floor layout
+
+Bots move in real-time within map boundaries
+
+Safe, crash-proof SVG rendering
+
+Pastel bot markers with live animation
+
+🛠️ Tech Stack
+Frontend
+
+React (Vite)
+
+React Router
+
+Zustand (global state)
+
+TailwindCSS (styling)
+
+Recharts (charts)
+
+SVG rendering
+
+Tools
+
+npm
+
+Git & GitHub
+
+Vercel Deployment
+
+📁 Project Structure
+src/
+ ├── components/
+ │    ├── BotCard.jsx
+ │    ├── CardStat.jsx
+ │    ├── ChartCard.jsx
+ │    ├── TaskForm.jsx
+ │    └── Navbar.jsx
+ │
+ ├── pages/
+ │    ├── Login.jsx
+ │    ├── Signup.jsx
+ │    ├── Dashboard.jsx
+ │    ├── BotStatus.jsx
+ │    ├── TaskAllocation.jsx
+ │    ├── TaskQueue.jsx
+ │    ├── Analytics.jsx
+ │    └── MapPage.jsx
+ │
+ ├── store/
+ │    ├── authStore.js
+ │    ├── botStore.js
+ │    └── taskStore.js
+ │
+ ├── utils/
+ │    ├── mockBotApi.js
+ │    └── mockTaskApi.js
+ │
+ ├── index.css
+ ├── App.jsx
+ └── main.jsx
+
+🚀 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/YOUR_USERNAME/warehouse-robot-dashboard.git
+cd warehouse-robot-dashboard
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run the development server
+npm run dev
+
+4️⃣ Open in browser
+http://localhost:5173/
+
+📦 Build for Production
+npm run build
+
+🌐 Deployment
+
+This project is deployed on Vercel.
+
+To redeploy manually:
+
+vercel --prod
+
+🔮 Future Enhancements
+
+WebSocket-based real backend
+
+Role-based authentication
+
+Robot path visualization
+
+Zoomable and pannable SVG map
+
+Warehouse heatmaps
+
+Database integration
+
+❤️ Credits
+
+Developed by Mallika.
