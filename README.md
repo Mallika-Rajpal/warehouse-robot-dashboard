@@ -1,154 +1,163 @@
-Warehouse Robot Dashboard
+# Warehouse Robot Dashboard
 
-A modern, aesthetic, real-time monitoring dashboard for warehouse robots — built using React, Vite, Zustand, TailwindCSS, and Recharts.
-It simulates robot movement, task allocation, analytics, and visualizes robots on an interactive SVG-based warehouse map.
+A real-time warehouse robot monitoring dashboard built using React, Vite, Zustand, TailwindCSS, and Recharts.  
+The application simulates robot activity, task management, analytics, and visualizes live robot movement on an uploaded warehouse SVG layout.
 
-🔗 Live Demo:
-👉 https://warehouse-robot-dashboard-m7b5wcetz.vercel.app
+**Live Demo:**  
+https://warehouse-robot-dashboard-m7b5wcetz.vercel.app
 
-✨ Features
-🧭 Authentication
+---
 
-Login & Signup (mock)
+## 1. Overview
 
-Zustand-based user state persistence
+This dashboard provides a complete simulation of warehouse operations.  
+It includes robot monitoring, task allocation, analytics, and an interactive map view supporting SVG uploads.  
+The UI is designed with a pastel, minimal aesthetic for a clean and modern experience.
 
-📊 Dashboard Overview
+---
 
-Total bots, idle bots, bots in error
+## 2. Features
 
-Pending tasks
+### 2.1 Authentication
+- Login and Signup (mock flow)
+- Zustand-based persistent user state
 
-Aesthetic stat cards using glassmorphism UI
+### 2.2 Dashboard Metrics
+- Total number of robots
+- Idle robots
+- Robots in error state
+- Pending tasks count
 
-🤖 Bot Status Monitoring
+### 2.3 Robot Monitoring
+- Live bot status updates
+- Battery level bars
+- Current task, speed, and timestamp
+- Smooth, responsive card UI
 
-Live bot updates
+### 2.4 Task Allocation and Queue
+- Create new tasks with pickup, drop, priority, and comments
+- Auto-processing task queue simulation
+- Timestamp displayed for all tasks
 
-Battery levels, speed, current task
+### 2.5 Analytics
+- Bot status distribution (Pie Chart)
+- Battery levels chart (Bar Chart)
+- Fully responsive Recharts integration
 
-Pastel aesthetic bot cards
+### 2.6 Warehouse Map (SVG-Based Visualization)
+- Upload any SVG warehouse layout
+- Real-time robot movement inside mapped boundaries
+- Smooth transitions and safe coordinate handling
+- Supports dynamically updating robot positions
 
-📝 Task Allocation & Queue
+---
 
-Create new tasks (pickup, drop, priority, notes)
+## 3. Tech Stack
 
-Automatic queue processing
+### Frontend Technologies
+- React (Vite)
+- React Router
+- Zustand (global state management)
+- TailwindCSS (UI styling)
+- Recharts (data visualization)
 
-Aesthetic task cards with live timestamps
+### Tools
+- npm
+- Git & GitHub
+- Vercel (deployment)
 
-📈 Analytics & Charts
+---
 
-Bot status distribution (Pie)
+## 4. Project Structure
 
-Battery distribution (Bar)
+The directory structure of the project is shown below.
 
-Fully responsive Recharts visualizations
-
-🗺️ Warehouse Map (SVG Powered)
-
-Upload any SVG warehouse floor layout
-
-Bots move in real-time within map boundaries
-
-Safe, crash-proof SVG rendering
-
-Pastel bot markers with live animation
-
-🛠️ Tech Stack
-Frontend
-
-React (Vite)
-
-React Router
-
-Zustand (global state)
-
-TailwindCSS (styling)
-
-Recharts (charts)
-
-SVG rendering
-
-Tools
-
-npm
-
-Git & GitHub
-
-Vercel Deployment
-
-📁 Project Structure
+```text
 src/
- ├── components/
- │    ├── BotCard.jsx
- │    ├── CardStat.jsx
- │    ├── ChartCard.jsx
- │    ├── TaskForm.jsx
- │    └── Navbar.jsx
- │
- ├── pages/
- │    ├── Login.jsx
- │    ├── Signup.jsx
- │    ├── Dashboard.jsx
- │    ├── BotStatus.jsx
- │    ├── TaskAllocation.jsx
- │    ├── TaskQueue.jsx
- │    ├── Analytics.jsx
- │    └── MapPage.jsx
- │
- ├── store/
- │    ├── authStore.js
- │    ├── botStore.js
- │    └── taskStore.js
- │
- ├── utils/
- │    ├── mockBotApi.js
- │    └── mockTaskApi.js
- │
- ├── index.css
- ├── App.jsx
- └── main.jsx
+├── components/
+│   ├── BotCard.jsx
+│   ├── CardStat.jsx
+│   ├── ChartCard.jsx
+│   ├── TaskForm.jsx
+│   └── Navbar.jsx
+│
+├── pages/
+│   ├── Login.jsx
+│   ├── Signup.jsx
+│   ├── Dashboard.jsx
+│   ├── BotStatus.jsx
+│   ├── TaskAllocation.jsx
+│   ├── TaskQueue.jsx
+│   ├── Analytics.jsx
+│   └── MapPage.jsx
+│
+├── store/
+│   ├── authStore.js
+│   ├── botStore.js
+│   └── taskStore.js
+│
+├── utils/
+│   ├── mockBotApi.js
+│   └── mockTaskApi.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
-🚀 Getting Started
-1️⃣ Clone the repository
-git clone https://github.com/YOUR_USERNAME/warehouse-robot-dashboard.git
+## 5. Getting Started
+
+### 5.1 Clone the Repository
+```bash
+git clone https://github.com/Mallika-Rajpal/warehouse-robot-dashboard
 cd warehouse-robot-dashboard
+```
 
-2️⃣ Install dependencies
+### 5.2 Install Dependencies
+```bash
 npm install
+```
 
-3️⃣ Run the development server
+### 5.3 Run the Development Server
+```bash
 npm run dev
+```
 
-4️⃣ Open in browser
+### 5.4 Open the Application
+
+Visit:
+```bash
 http://localhost:5173/
+```
 
-📦 Build for Production
+## 6. Build for Production
+```bash
 npm run build
+```
+## 7. Deployment
 
-🌐 Deployment
-
-This project is deployed on Vercel.
+This project is deployed using Vercel.
 
 To redeploy manually:
-
+```bash
 vercel --prod
+```
 
-🔮 Future Enhancements
+## 8. Future Enhancements
 
-WebSocket-based real backend
+- WebSocket backend for real-time updates  
+- Zoom and pan support on the SVG map  
+- Heatmap analytics for warehouse activity  
+- Role-based authentication  
+- Database integration (MongoDB / Firebase)  
+- Robot path prediction and collision avoidance  
 
-Role-based authentication
+---
 
-Robot path visualization
+## 9. Author
 
-Zoomable and pannable SVG map
+Developed by **Mallika** 
 
-Warehouse heatmaps
 
-Database integration
 
-❤️ Credits
 
-Developed by Mallika.
